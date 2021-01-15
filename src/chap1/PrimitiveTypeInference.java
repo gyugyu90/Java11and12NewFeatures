@@ -1,6 +1,6 @@
 package chap1;
 
-public class Foo {
+public class PrimitiveTypeInference {
 
     public static void main(String[] args) {
         try {
