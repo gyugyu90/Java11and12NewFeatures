@@ -13,5 +13,11 @@ public class TypeInference {
         var query = new StringBuilder("SELECT"); // infer type as StringBuilder
         // query = query.toString() + "FROM" + "TABLE"; // won't compile
 
+        byte age2 = 29; // no type inference
+        var age3 = (byte) 29; // explicit type casting
+
+        var letter = (char) 97;
+        var debit = (float) 17.9;
+
     }
 }

@@ -10,6 +10,11 @@ public class ClassTypeInference {
         var obj2 = getObject("Child");
         obj2.whistle();
         // obj2.stand(); // This line doesn't compile
+
+        var car = (Automobile) new Car();
+        // car.check(); // won't compile.
+
+        var name = (String) null; // code compiles
     }
 
     static Parent getObject(String type) {
@@ -34,6 +39,12 @@ public class ClassTypeInference {
         void stand() {
             System.out.println("Child Stand");
         }
+    }
+
+    static class Automobile {}
+
+    static class Car extends Automobile {
+        void check() {}
     }
 
 }
